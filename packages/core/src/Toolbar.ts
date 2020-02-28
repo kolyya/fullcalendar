@@ -193,7 +193,7 @@ export default class Toolbar extends Component<ToolbarRenderProps> {
 
   updateTitle(text) {
     findElements(this.el, 'h2').forEach(function(titleEl) {
-      titleEl.innerText = text
+      titleEl.innerHTML = text
     })
   }
 
